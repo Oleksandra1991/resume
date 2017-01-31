@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Aleksandra Kurowska</title>
+    <meta charset="utf-8">
+    <!--Główny styl -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+       $('.carousel.carousel-slider').carousel({fullWidth: true});
+       $('.parallax').parallax();
+       
+       $('.button-collapse').sideNav({
+           menuWidth: 300, // Default is 300
+           edge: 'left', // Choose the horizontal origin
+           closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+           draggable: true // Choose whether you can drag to open on touch screens
+         }
+       );
+        $('.button-collapse').sideNav('hide');
+        $('.button-collapse').sideNav('destroy');
+     });
+
+    </script>
+  </head>
+
+  <body class="indigo lighten-5">
+
+      <nav>
+        <div class="nav-wrapper red darken-2 margin-nav">
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul id="slide-out" class="side-nav">
+              <li><div class="userView">
+                <div class="background">
+                  <img src="images/office.jpg">
+                </div>
+                <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                <a href="#!name"><span class="white-text name">John Doe</span></a>
+                <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+              </div></li>
+              <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+              <li><a href="#!">Second Link</a></li>
+              <li><div class="divider"></div></li>
+              <li><a class="subheader">Subheader</a></li>
+              <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+          <ul class="right">
+            <li><a href="">GitHub</a></li>
+            <li><a href="">Curriculum Vitae</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+      <div class="row">
+      <!-- STRONA LEWA -->
+        <div class="col s12 col m4">
+            <div class="card hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/Ola.jpg">
+              </div>
+              <div class="card-content">
+                <h5 class="grey-text text-darken-4">Aleksandra Kurowska</h5>
+                <span class="card-title activator grey-text text-darken-4">Dane osobowe<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <p class="card-title grey-text text-darken-4">Dane osobowe<i class="material-icons right">close</i></p>
+                <p>Kraków</p>
+                <p>ul. Radzwiłłowska 27/15</p>
+                <p>2 lipca 1991 rok</p>
+              </div>
+            </div>
+        </div>
+      <!-- KONIEC STRONY LEWEJ -->
+        <!-- STRONA PRAWA -->
+        <div class="col s12 col m8">
+          <div class="card-panel hoverable">
+            <div class="carousel carousel-slider center" data-indicators="true">
+              <div class="carousel-item grey white-text" href="#one!">
+                <h2>O sobie</h2>
+                <div class="container">
+                  <p class="white-text">Jestem osobą, która lubi wprowadzać w życie innowacyjne pomysły. Od sierpnia zaczęłam się samodzielnie uczyć  zagadnienień związnych z fron-endem. W listopadzie zaczełam staż, podczas którego pogłębiłam swoją wiedzę. Wybrałam tą dziedzinę, ponieważ spodobało mi się połączenie programowania z wykorzystaniem zmysłu estetycznego. </p>
+                </div>
+              </div>
+              <div class="carousel-item light-green white-text" href="#two!">
+                <h2>Zainteresowania</h2>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- KONIEC STRONY PRAWEJ -->
+      </div>
+
+      <!-- parallax -->
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/tlo.jpg"></div>
+      </div>
+      <!-- parallax -->
+
+
+      <div class="fixed-action-btn">
+      <a class="btn-floating btn-large red">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
+
+
+
+  </body>
+</html>
