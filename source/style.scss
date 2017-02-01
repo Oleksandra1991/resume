@@ -3,7 +3,7 @@ html {
  }
 @media screen and (min-width:993px){
 .interests {
-  height: 400px;
+  height: 380px;
   margin: 0;
   }
 }
@@ -15,6 +15,9 @@ html {
 }
 .row .cursor-interests{
   cursor: default;
+  .center{
+  padding-top: 20px !important;
+}
 }
 .container p {
   font-size: 16px;

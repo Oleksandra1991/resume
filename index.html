@@ -12,19 +12,21 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
 
     <script>
+
+
       $(document).ready(function(){
        $('.carousel.carousel-slider').carousel({fullWidth: true});
        $('.parallax').parallax();
-
        $(".button-collapse").sideNav();
-
-      $('body').on('click', '.button-collapse', function() {
-      window.alert('too bad :(. This event will never be triggered because the sideNav is stopping propagation.');
+       $('body').on('click', '.button-collapse', function() {
+         window.alert('too bad :(. This event will never be triggered because the sideNav is stopping propagation.');
       });
         $('.carousel').carousel();
      });
+
     </script>
   </head>
 
@@ -67,7 +69,7 @@
 
 
 
-      <div id="o-mnie" class="row">
+      <div id="o-mnie" class="row start-fire">
       <!-- STRONA LEWA -->
         <div class="col s12 col l4">
             <div class="card hoverable">
@@ -133,7 +135,7 @@
 
 
       <!-- zaintersowania -->
-      <div id="zainteresowania" class="row">
+      <div id="zainteresowania" class="row start-fire">
         <div class="">
           <div class="col s12 offset-l2 l4 ">
             <div class="valign-wrapper interests">
