@@ -1,18 +1,7 @@
 html {
   font-family: GillSans, Calibri, Trebuchet, sans-serif; }
 
-body .row {
-  margin-bottom: 20px; }
-
-body .row .about-me {
-  height: 600px;
-  border: 2px solid white; }
-
-.margin-nav {
-  padding-left: 18px;
-  padding-right: 15px; }
-
 .card-content h5 {
-  line-height: 2.6em; }
+  line-height: 2.7em; }
 
 /*# sourceMappingURL=style.css.map */
