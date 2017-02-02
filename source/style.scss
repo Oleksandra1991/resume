@@ -1,6 +1,24 @@
 html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
  }
+ // O mnie
+ .container  {
+   p {
+   font-size: 16px;
+  }
+  .i-know{
+    font-size: 20px;
+    margin: 40px 0 6px;
+  }
+  .tags {
+    margin-bottom: 47px;
+    .chip {
+      margin-top: 10px;
+    }
+  }
+ }
+
+ // Zaintersowania
 @media screen and (min-width:993px){
 .interests {
   height: 380px;
@@ -15,17 +33,7 @@ html {
 }
 .row .cursor-interests{
   cursor: default;
-  .center{
-  padding-top: 20px !important;
-}
-}
-.container p {
-  font-size: 16px;
-}
-.container .i-know{
-  font-size: 20px;
-  margin: 40px 0 63px;
-}
-.container .tags {
-  margin-bottom: 47px;
+  .center {
+  padding-top: 20px;
+  }
 }
