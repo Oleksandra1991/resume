@@ -5,7 +5,7 @@ html {
  @media screen and (min-width:992px) {
  .card-panel, .personal-data {
    height: $height-col;
- }
+  }
  }
  .container  {
    p {
@@ -13,12 +13,12 @@ html {
   }
   .i-know{
     font-size: 20px;
-    margin: 40px 0 6px;
+    @include margin(40px, 6px);
   }
   .tags {
-    margin-bottom: 47px;
+    @include margin(0, 47px);
     .chip {
-      margin-top: 10px;
+      @include margin(10px, 0);
     }
   }
  }

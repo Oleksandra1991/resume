@@ -10,9 +10,9 @@ html {
   font-size: 20px;
   margin: 40px 0 6px; }
 .container .tags {
-  margin-bottom: 47px; }
+  margin: 0 0 47px; }
   .container .tags .chip {
-    margin-top: 10px; }
+    margin: 10px 0 0; }
 
 @media screen and (max-width: 532px) {
   .row .no-pad {

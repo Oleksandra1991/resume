@@ -6,3 +6,6 @@
   height: 100%;
   background: rgba(52, 82, 113, 0.2);
 }
+@mixin margin ($top, $bottom) {
+  margin: $top 0 $bottom;
+}
