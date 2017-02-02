@@ -27,12 +27,16 @@
        $('.link2').click(function() { $.scrollTo($('#experience'), 600); });
        $('.link3').click(function() { $.scrollTo($('#hobby'), 600); });
        $('#scrollup').click(function() { $.scrollTo($('body'), 800); });
-     });
 
-      $(window).scroll(function(){
-        if($(this).scrollTop()> 200) $('#scrollup').fadeIn();
-        else $('#scrollup').fadeOut();
-      });
+       $(window).scroll(function(){
+         if($(this).scrollTop()> 200) {
+           $("#scrollup").removeClass("hidden").fadeIn();
+         }
+         else{
+           $("#scrollup").addClass("hidden").fadeOut();
+         }
+       });
+     });
 
     </script>
   </head>
@@ -208,7 +212,7 @@
       </div>
 
       <div class="fixed-action-btn">
-        <a href="#" id="scrollup" class="btn-floating btn-large  blue darken-4">
+        <a href="#" id="scrollup" class="btn-floating btn-large  blue darken-4 hidden">
           <i class="large material-icons">keyboard_arrow_up</i>
         </a>
       </div>

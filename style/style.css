@@ -58,4 +58,7 @@ html {
 footer .page-footer .no-padding {
   padding-top: 0; }
 
+.hidden {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */
