@@ -2,8 +2,10 @@ html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
  }
  // O mnie
- .card-panel, .personal-data{
+ @media screen and (min-width:992px) {
+ .card-panel, .personal-data {
    height: $height-col;
+ }
  }
  .container  {
    p {
@@ -20,13 +22,21 @@ html {
     }
   }
  }
+ @media screen and (max-width:532px){
+   .row .no-pad {
+     padding: 0;
+   }
+   .no-container {
+     width: 100%;
+   }
+ }
  // parallax
  .dark-overlay {
    @include overlay;
  }
  .parallax-container .parallax-card{
-   opacity: 0.6;
-   height: 250px;
+   opacity: 0.7;
+   height: 235px;
    border-radius: 5px;
    margin-top: 8rem;
    .container-width {
