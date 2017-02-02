@@ -35,10 +35,10 @@
     <!-- Nagłówek -->
 
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="#o-mnie" style="font-size:12px;">O mnie</a></li>
+        <li><a href="#about-me" style="font-size:12px;">O mnie</a></li>
         <li><a href="#!" style="font-size:12px;">Doświadczenie</a></li>
         <li class="divider"></li>
-        <li><a href="#zainteresowania" style="font-size:12px;">Zaintersowania</a></li>
+        <li><a href="#hobby" style="font-size:12px;">Zaintersowania</a></li>
       </ul>
       <nav>
         <div class="nav-wrapper">
@@ -51,9 +51,9 @@
             <a href="#!name"><span class="white-text name">Aleksandra Kurowska</span></a>
             <a href="#!email"><span class="white-text email">aleksssandra.kurowska@gmail.com</span></a>
           </div></li>
-          <li><a href="#o-mnie"><i class="material-icons">perm_identity</i>O mnie</a></li>
+          <li><a href="#about-me"><i class="material-icons">perm_identity</i>O mnie</a></li>
           <li><a href="#!"><i class="material-icons">settings</i>Doświadczenie</a></li>
-          <li><a href="#zainteresowania"><i class="material-icons">directions_bike</i>Zainteresowania</a></li>
+          <li><a href="#hobby"><i class="material-icons">directions_bike</i>Zainteresowania</a></li>
           <li><div class="divider"></div></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -67,12 +67,11 @@
       </nav>
 
 
-
-
-      <div id="o-mnie" class="row start-fire">
+      <!-- O mnie -->
+      <div id="about-me" class="row start-fire">
       <!-- STRONA LEWA -->
         <div class="col s12 col l4">
-            <div class="card hoverable">
+            <div class="card hoverable personal-data">
               <div class="card-image">
                 <img class="activator" src="img/Ola.jpg">
               </div>
@@ -91,7 +90,7 @@
       <!-- KONIEC STRONY LEWEJ -->
         <!-- STRONA PRAWA -->
         <div class="col s12 col l8">
-          <div class="card-panel large hoverable teal">
+          <div class="card-panel hoverable teal">
             <div class="container">
               <h5 class="white-text center">O mnie</h5>
               <p class="white-text center">Jestem osobą, która lubi wprowadzać w życie innowacyjne pomysły. Zawód jako front-end developer spodobał mi się, ponieważ łączy ze sobą programowanie wraz ze zmysłem estetycznym.</p>
@@ -109,6 +108,10 @@
                 <div class="chip">
                  <img src="img/js.png" alt="JS">
                  JavaScript
+                </div>
+                <div class="chip">
+                  <img src="img/rwd.png" alt="rwd">
+                  RWD
                 </div>
                 <div class="chip">
                   <img src="img/bootstrap.png" alt="bootstrap">
@@ -135,15 +138,25 @@
 
       <!-- parallax -->
       <div class="parallax-container">
-        <div class="parallax"><img src="img/tlo3.jpg"></div>
-      </div>
+        <div class="dark-overlay">
+          <div class="parallax"><img src="img/tlo.jpg"></div>
+            <div class="row">
+              <div class="col s4 offset-s4">
+                <div class="card hoverable parallax-card">
+                  <div class="container container-width">
+                    <h5 class="center">Doświadczenie</h5>
+                    <p>Od sierpnia zaczęłam uczyć się HTML5, CSS3, podstawy JavaScript, Bootstrap i Git.</p>
+                    <p>Pod koniec listopada rozpoczęłam pracę w firmie jako front-end developer. Wówczas poszerzyłam swoją wiedzę o LESS i podstawy SASS.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       <!-- parallax -->
 
-
-
-
       <!-- zaintersowania -->
-      <div id="zainteresowania" class="row start-fire">
+      <div id="hobby" class="row start-fire">
         <div class="">
           <div class="col s12 offset-l2 l4 ">
             <div class="valign-wrapper interests">
@@ -156,7 +169,7 @@
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Zaintersowania<i class="material-icons right">more_vert</i></span>
                 </div>
-                <div class="card-reveal red lighten-2">
+                <div class="card-reveal grey lighten-2">
                   <span class="card-title"><i class="material-icons right">close</i></span>
                   </br>
                   <li>podróże</li>
@@ -181,36 +194,18 @@
       </div>
 
       <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">mode_edit</i>
-    </a>
-  </div>
+        <a class="btn-floating btn-large  blue darken-4">
+          <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+      </div>
       <!-- stopka -->
-      <footer class="page-footer">
+      <footer class="page-footer no-padding">
+        <div class="footer-copyright">
           <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-              </div>
-            </div>
+          © 2017 Copyright
           </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2017 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-          </div>
-        </footer>
+        </div>
+      </footer>
 
   </body>
 </html>

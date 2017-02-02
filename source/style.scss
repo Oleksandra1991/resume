@@ -2,6 +2,9 @@ html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
  }
  // O mnie
+ .card-panel, .personal-data{
+   height: $height-col;
+ }
  .container  {
    p {
    font-size: 16px;
@@ -17,7 +20,28 @@ html {
     }
   }
  }
-
+ // parallax
+ .dark-overlay {
+   @include overlay;
+ }
+ .parallax-container .parallax-card{
+   opacity: 0.6;
+   height: 250px;
+   border-radius: 5px;
+   margin-top: 8rem;
+   .container-width {
+     width: 85%;
+     h5 {
+      padding: 16px 0;
+    }
+    p {
+      text-align: justify;
+    }
+    p:last-child {
+      padding-bottom: 16px;
+    }
+   }
+ }
  // Zaintersowania
 @media screen and (min-width:993px){
 .interests {
@@ -36,4 +60,8 @@ html {
   .center {
   padding-top: 20px;
   }
+}
+// Stopka
+footer .page-footer .no-padding{
+  padding-top: 0;
 }
