@@ -9,7 +9,7 @@ html {
  }
  @media screen and (min-width:1350px) {
  .card-panel, .personal-data {
-   height: 500px;
+   height: $height-col-max;
   }
  }
  .container  {
