@@ -1,7 +1,7 @@
 html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
  }
- // O mnie
+ // About me
  @media screen and (min-width:992px) {
  .card-panel, .personal-data {
    height: $height-col;
@@ -52,7 +52,7 @@ html {
     }
    }
  }
- // Zaintersowania
+ // Hobby
 @media screen and (min-width:993px){
 .interests {
   height: 380px;
@@ -71,11 +71,11 @@ html {
   padding-top: 20px;
   }
 }
-// Stopka
+// Footer
 footer .page-footer .no-padding{
   padding-top: 0;
 }
-// scroll
+// Scroll
 .hidden{
   display: none !important;
 }
