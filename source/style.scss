@@ -9,7 +9,17 @@ html {
  }
  @media screen and (min-width:1350px) {
  .card-panel, .personal-data {
+   height: $height-col-medium;
+  }
+ }
+ @media screen and (min-width:1700px) {
+ .card-panel, .personal-data {
    height: $height-col-max;
+  }
+ }
+ @media screen and (min-width:1900px) {
+ .card-panel, .personal-data {
+   height: $height-col-full-max;
   }
  }
  .container  {

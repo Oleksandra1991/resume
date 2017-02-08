@@ -7,6 +7,12 @@ html {
 @media screen and (min-width: 1350px) {
   .card-panel, .personal-data {
     height: 450px; } }
+@media screen and (min-width: 1700px) {
+  .card-panel, .personal-data {
+    height: 500px; } }
+@media screen and (min-width: 1900px) {
+  .card-panel, .personal-data {
+    height: 550px; } }
 .container p {
   font-size: 16px; }
 .container .i-know {
