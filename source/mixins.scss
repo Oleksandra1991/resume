@@ -9,12 +9,10 @@
 @mixin margin ($top, $bottom) {
   margin: $top 0 $bottom;
 }
-
 @mixin transform {
   transform: translateY(-50%);
   top: 50%;
 }
-
 @mixin position {
   position: absolute;
   bottom: 0;

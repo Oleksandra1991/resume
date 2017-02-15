@@ -22,12 +22,6 @@ html {
    height: $height-col-full-max;
   }
  }
- // @media screen and (min-width: 1700px) {
- //   .content-all {
- //   max-width: 2000px;
- //   margin: 0 auto;
- //  }
- // }
  @media screen and (min-width: 2000px) {
    .when-large {
      overflow: hidden;
@@ -84,6 +78,10 @@ html {
       padding-bottom: 16px;
     }
    }
+ }
+ #experience {
+   position: relative;
+   z-index: 1;
  }
  // Hobby
 @media screen and (min-width:993px) {

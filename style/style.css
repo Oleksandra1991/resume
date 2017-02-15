@@ -64,6 +64,10 @@ html {
     .parallax-container .parallax-card .container-width p:last-child {
       padding-bottom: 16px; }
 
+#experience {
+  position: relative;
+  z-index: 1; }
+
 @media screen and (min-width: 993px) {
   .interests {
     height: 380px;
