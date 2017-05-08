@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
+
+<head>
     <title>Aleksandra Kurowska</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,203 +16,217 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script>
-      $(document).ready(function(){
-       $('.carousel.carousel-slider').carousel({fullWidth: true});
-       $('.parallax').parallax();
-       $(".button-collapse").sideNav();
-       $('.carousel').carousel();
+        $(document).ready(function() {
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
+            $('.parallax').parallax();
+            $(".button-collapse").sideNav();
+            $('.carousel').carousel();
 
-       $('.link1').click(function() { $.scrollTo($('#about-me'), 600); });
-       $('.link2').click(function() { $.scrollTo($('#experience'), 600); });
-       $('.link3').click(function() { $.scrollTo($('#hobby'), 600); });
-       $('#scrollup').click(function() { $.scrollTo($('body'), 800); });
+            $('.link1').click(function() {
+                $.scrollTo($('#about-me'), 600);
+            });
+            $('.link2').click(function() {
+                $.scrollTo($('#experience'), 600);
+            });
+            $('.link3').click(function() {
+                $.scrollTo($('#hobby'), 600);
+            });
+            $('#scrollup').click(function() {
+                $.scrollTo($('body'), 800);
+            });
 
-       $(window).scroll(function(){
-         if($(this).scrollTop()> 200) {
-           $("#scrollup").removeClass("hidden").fadeIn();
-         }
-         else{
-           $("#scrollup").addClass("hidden").fadeOut();
-         }
-       });
-     });
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 200) {
+                    $("#scrollup").removeClass("hidden").fadeIn();
+                } else {
+                    $("#scrollup").addClass("hidden").fadeOut();
+                }
+            });
+        });
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="indigo lighten-5">
-    <!-- Navbar -->
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#" class="link1" style="font-size:14px;">O mnie</a></li>
-      <li class="divider"></li>
-      <li><a href="#" class="link2" style="font-size:14px;">Doświadczenie</a></li>
-      <li class="divider"></li>
-      <li><a href="#" class="link3" style="font-size:14px;">Zaintersowania</a></li>
-    </ul>
-    <nav>
-      <div class="nav-wrapper">
-        <ul id="slide-out" class="side-nav">
-        <li><div class="userView">
-          <div class="background">
-            <img src="img/about-me.jpg">
-          </div>
-          <a href="#!user"><img class="circle" src="img/navbar.jpg"></a>
-          <a href="#!name"><span class="white-text name">Aleksandra Kurowska</span></a>
-          <a href="#!email"><span class="white-text email">aleksssandra.kurowska@gmail.com</span></a>
-        </div></li>
-        <li><a href="#" class="link1"><i class="material-icons">perm_identity</i>O mnie</a></li>
-        <li><a href="#" class="link2"><i class="material-icons">settings</i>Doświadczenie</a></li>
-        <li><a href="#" class="link3"><i class="material-icons">directions_bike</i>Zainteresowania</a></li>
-        <li><div class="divider"></div></li>
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <!-- Dropdown Trigger -->
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Start&nbsp;&nbsp;<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="https://github.com/Oleksandra1991" target="_blank">GitHub</a></li>
-          <li><a href="Curriculum Vitae_Aleksandra Kurowska.pdf" download>Curriculum Vitae</a></li>
+        <!-- Navbar -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#" class="link1" style="font-size:14px;">O mnie</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class="link2" style="font-size:14px;">Doświadczenie</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class="link3" style="font-size:14px;">Zaintersowania</a></li>
         </ul>
-      </div>
-    </nav>
-      <!-- About me -->
-    <div id="about-me">
-      <div class="row">
-        <!-- Left site -->
-        <div class="col s12 col m10 offset-m1 col l4">
-          <div class="card hoverable personal-data when-large">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator responsive-img" src="img/cv.jpg">
+        <nav>
+            <div class="nav-wrapper">
+                <ul id="slide-out" class="side-nav">
+                    <li>
+                        <div class="userView">
+                            <div class="background">
+                                <img src="img/about-me.jpg">
+                            </div>
+                            <a href="#!user"><img class="circle" src="img/navbar.jpg"></a>
+                            <a href="#!name"><span class="white-text name">Aleksandra Kurowska</span></a>
+                            <a href="#!email"><span class="white-text email">aleksssandra.kurowska@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="link1"><i class="material-icons">perm_identity</i>O mnie</a></li>
+                    <li><a href="#" class="link2"><i class="material-icons">settings</i>Doświadczenie</a></li>
+                    <li><a href="#" class="link3"><i class="material-icons">directions_bike</i>Zainteresowania</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                </ul>
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Start&nbsp;&nbsp;<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="https://github.com/Oleksandra1991" target="_blank">GitHub</a></li>
+                    <li><a href="Curriculum Vitae_Aleksandra Kurowska.pdf" download>Curriculum Vitae</a></li>
+                </ul>
             </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Aleksandra Kurowska</span>
-              <span class="card-title activator grey-text text-darken-2">Dane osobowe<i class="material-icons right">more_vert</i></span>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-2">Dane osobowe<i class="material-icons right">close</i></span>
-              <p>Kraków</p>
-              <p>ul. Radzwiłłowska 27/15</p>
-              <p>2 lipca 1991 rok</p>
-              <p>aleksssandra.kurowska@gmail.com</p>
-            </div>
-          </div>
-        </div>
-        <!-- Right site -->
-          <div class="col s12 col m10 offset-m1 col l8">
-            <div class="card-panel hoverable teal no-pad valign-wrapper">
-              <div class="container another-container valign">
-                <h5 class="white-text center">O mnie</h5>
-                <p class="white-text center">Jestem osobą, która lubi wprowadzać w życie innowacyjne pomysły. Zawód jako front-end developer spodobał mi się, ponieważ łączy ze sobą programowanie wraz ze zmysłem estetycznym.</p>
-                <div class="divider"></div>
-                <p class="white-text center i-know">Posiadam wiedzę z zakresu:</p>
-                <div class="tags center">
-                   <div class="chip">
-                     <img src="img/html.png" alt="HTML5">
-                     HTML5
-                   </div>
-                   <div class="chip">
-                    <img src="img/css.png" alt="CSS3">
-                    CSS3
-                  </div>
-                  <div class="chip">
-                   <img src="img/js.png" alt="JS">
-                   JavaScript
-                  </div>
-                  <div class="chip">
-                    <img src="img/rwd.png" alt="rwd">
-                    RWD
-                  </div>
-                  <div class="chip">
-                    <img src="img/bootstrap.png" alt="bootstrap">
-                    Bootstrap
-                  </div>
-                  <div class="chip">
-                    <img src="img/less.png" alt="less">
-                    LESS
-                  </div>
-                  <div class="chip">
-                    <img src="img/sass.png" alt="sass">
-                    SASS
-                  </div>
-                  <div class="chip">
-                    <img src="img/git.png" alt="git">
-                    Git
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Experience -->
-      <div id="experience">
-        <div class="parallax-container">
-          <div class="dark-overlay">
-            <div class="parallax"><img src="img/bg.jpg"></div>
-              <div class="row">
-                <div class="col s12 col m8 offset-m2 col l6 offset-l3">
-                  <div class="card hoverable parallax-card">
-                    <div class="container container-width">
-                      <h5 class="center">Doświadczenie</h5>
-                      <p>Od sierpnia zaczęłam uczyć się HTML5, CSS3, podstawy JavaScript, Bootstrap i Git.</p>
-                      <p>Pod koniec listopada rozpoczęłam pracę w firmie jako front-end developer. Wówczas poszerzyłam swoją wiedzę o LESS i podstawy SASS.</p>
+        </nav>
+        <main>
+            <article>
+                <!-- About me -->
+                <section>
+                    <div id="about-me">
+                        <div class="row">
+                            <!-- Left site -->
+                            <div class="col s12 col m10 offset-m1 col l4">
+                                <div class="card hoverable personal-data when-large">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator responsive-img" src="img/cv.jpg">
+                                    </div>
+                                    <div class="card-content">
+                                        <span class="card-title activator grey-text text-darken-4">Aleksandra Kurowska</span>
+                                        <span class="card-title activator grey-text text-darken-2">Dane osobowe<i class="material-icons right">more_vert</i></span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-2">Dane osobowe<i class="material-icons right">close</i></span>
+                                        <p>Kraków</p>
+                                        <p>ul. Radzwiłłowska 27/15</p>
+                                        <p>2 lipca 1991 rok</p>
+                                        <p>aleksssandra.kurowska@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Right site -->
+                            <div class="col s12 col m10 offset-m1 col l8">
+                                <div class="card-panel hoverable teal no-pad valign-wrapper">
+                                    <div class="container another-container valign">
+                                        <h5 class="white-text center">O mnie</h5>
+                                        <p class="white-text center">Jestem osobą, która lubi wprowadzać w życie innowacyjne pomysły. Zawód jako front-end developer spodobał mi się, ponieważ łączy ze sobą programowanie wraz ze zmysłem estetycznym.</p>
+                                        <div class="divider"></div>
+                                        <p class="white-text center i-know">Posiadam wiedzę z zakresu:</p>
+                                        <div class="tags center">
+                                            <div class="chip">
+                                                <img src="img/html.png" alt="HTML5"> HTML5
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/css.png" alt="CSS3"> CSS3
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/js.png" alt="JS"> JavaScript
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/rwd.png" alt="rwd"> RWD
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/bootstrap.png" alt="bootstrap"> Bootstrap
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/less.png" alt="less"> LESS
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/sass.png" alt="sass"> SASS
+                                            </div>
+                                            <div class="chip">
+                                                <img src="img/git.png" alt="git"> Git
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </section>
+                <!-- Experience -->
+                <section>
+                    <div id="experience">
+                        <div class="parallax-container">
+                            <div class="dark-overlay">
+                                <div class="parallax"><img src="img/bg.jpg"></div>
+                                <div class="row">
+                                    <div class="col s12 col m8 offset-m2 col l6 offset-l3">
+                                        <div class="card hoverable parallax-card">
+                                            <div class="container container-width">
+                                                <h5 class="center">Doświadczenie</h5>
+                                                <p>Od sierpnia zaczęłam uczyć się HTML5, CSS3, podstawy JavaScript, Bootstrap i Git.</p>
+                                                <p>Pod koniec listopada rozpoczęłam pracę w firmie jako front-end developer. Wówczas poszerzyłam swoją wiedzę o LESS i podstawy SASS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <!-- Hobby -->
+                    <div id="hobby">
+                        <div class="row">
+                            <div class="col s12 offset-l2 l4 ">
+                                <div class="valign-wrapper interests">
+                                    <div class=" card hoverable valign margin-card  teal">
+                                        <div class="card-image waves-effect waves-block waves-light cursor-interests">
+                                            <div class="center">
+                                                <i class="large material-icons">directions_bike</i>
+                                            </div>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Zaintersowania<i class="material-icons right">more_vert</i></span>
+                                        </div>
+                                        <div class="card-reveal grey lighten-2">
+                                            <span class="card-title"><i class="material-icons right">close</i></span>
+                                            </br>
+                                            <li>podróże</li>
+                                            <li>sport</li>
+                                            <li>masaże relaksacyjne</li>
+                                            <li>moda</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 l5">
+                                <div class="carousel">
+                                    <a class="carousel-item" href="#one!"><img src="img/traveling.jpg"></a>
+                                    <a class="carousel-item" href="#two!"><img src="img/sport.jpg"></a>
+                                    <a class="carousel-item" href="#three!"><img src="img/massage.jpg"></a>
+                                    <a class="carousel-item" href="#four!"><img src="img/fashion.jpg"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Button -->
+                <div class="fixed-action-btn">
+                    <a href="#" id="scrollup" class="btn-floating btn-large  blue darken-4 hidden">
+                        <i class="large material-icons">keyboard_arrow_up</i>
+                    </a>
                 </div>
-              </div>
+            </article>
+        </main>
+        <!-- Footer -->
+        <footer class="page-footer no-padding">
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2017 Copyright
+                </div>
             </div>
-          </div>
-        </div>
-      <!-- Hobby -->
-      <div id="hobby">
-        <div class="row">
-          <div class="col s12 offset-l2 l4 ">
-            <div class="valign-wrapper interests">
-              <div class=" card hoverable valign margin-card  teal">
-                <div class="card-image waves-effect waves-block waves-light cursor-interests">
-                  <div class="center">
-                  <i class="large material-icons">directions_bike</i>
-                </div>
-                </div>
-                <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4">Zaintersowania<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal grey lighten-2">
-                  <span class="card-title"><i class="material-icons right">close</i></span>
-                  </br>
-                  <li>podróże</li>
-                  <li>sport</li>
-                  <li>masaże relaksacyjne</li>
-                  <li>moda</li>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 l5">
-            <div class="carousel">
-              <a class="carousel-item" href="#one!"><img src="img/traveling.jpg"></a>
-              <a class="carousel-item" href="#two!"><img src="img/sport.jpg"></a>
-              <a class="carousel-item" href="#three!"><img src="img/massage.jpg"></a>
-              <a class="carousel-item" href="#four!"><img src="img/fashion.jpg"></a>
-            </div>
-          </div>
-          <div class="col offset-l1">
-          </div>
-        </div>
-      </div>
-      <!-- Button -->
-      <div class="fixed-action-btn">
-        <a href="#" id="scrollup" class="btn-floating btn-large  blue darken-4 hidden">
-          <i class="large material-icons">keyboard_arrow_up</i>
-        </a>
-      </div>
-      <!-- Footer -->
-      <footer class="page-footer no-padding">
-        <div class="footer-copyright">
-          <div class="container">
-          © 2017 Copyright
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
-  </body>
-  </html>
+</body>
+
+</html>
